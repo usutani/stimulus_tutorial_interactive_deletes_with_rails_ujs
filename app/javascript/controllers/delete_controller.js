@@ -16,6 +16,7 @@ export default class extends Controller {
       clearTimeout(this.timeout)
       this.resetState()
       this.element.style = ''
+      alert("Failed to delete.")
     }
   }
 

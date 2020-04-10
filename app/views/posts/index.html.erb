@@ -10,7 +10,7 @@
     <br />
     <em><%= post.created_at.strftime("%l:%M %P") %></em>
     <br />
-    <%= link_to "Delete", post_path(post), method: :delete, remote: true, data: { target: "delete.link", action: "ajax:beforeSend->delete#click" } %>
+    <%= link_to "Delete", post_path(post, format: :json), method: :delete, remote: true, data: { target: "delete.link", action: "ajax:beforeSend->delete#click" } %>
     </p>
   </div>
 <% end %>
